@@ -4,7 +4,7 @@
   <!-- ------------------------------------------------------ -->
 
   <div
-    class="p-4 bg-white-alpha-10 flex align-items-center justify-content-between gap-2 sticky top-0 left-0"
+    class="p-4 bg-white-alpha-10 flex align-items-center justify-content-between gap-2 sticky top-0 left-0 z-5"
     style="backdrop-filter: blur(8px)"
   >
     <div class="flex">
