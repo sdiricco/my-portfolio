@@ -1,0 +1,111 @@
+/* Stile per il contenitore principale del documento Markdown */
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Stili per gli elementi di testo nel documento Markdown */
+.markdown-body p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.markdown-body h1{
+  background: linear-gradient(
+    to right,
+    #a1f7b9,
+    #61f3f3
+  ); /* Gradiente verde-viola per il background dei titoli */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+/* Stili per i titoli con gradiente verde-viola */
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5 {
+  width: fit-content;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-bottom: 20px;
+}
+
+.markdown-body li {
+  line-height: 1.6;
+}
+
+.markdown-body a {
+  color: white; /* Colore dei link in blu chiaro */
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+/* Stili per le tabelle nel documento Markdown */
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid #666666; /* Colore dei bordi delle celle della tabella */
+  padding: 8px;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+  background-color: #444444; /* Colore di sfondo per le intestazioni delle tabelle */
+}
+
+/* Stili per le immagini nel documento Markdown */
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stili per i blocchi di citazione nel documento Markdown */
+.markdown-body blockquote {
+  border-left: 4px solid #999999; /* Colore del bordo delle citazioni */
+  padding-left: 16px;
+  color: #999999; /* Colore del testo delle citazioni in grigio medio */
+  margin-left: 0;
+}
+
+/* Stili per il testo in grassetto e corsivo nel documento Markdown */
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body em {
+  font-style: italic;
+}
+
+/* Stili per le sezioni di codice nel documento Markdown */
+.markdown-body pre {
+  background-color: #292828; /* Colore di sfondo per i blocchi di codice */
+  padding: 16px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.markdown-body pre code {
+  display: block;
+  font-size: 14px;
+  overflow-x: auto;
+  color: #ffffff; /* Colore del testo nei blocchi di codice */
+}

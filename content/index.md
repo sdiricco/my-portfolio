@@ -1,17 +1,7 @@
-# Curriculum Vitae
-## Mario Rossi
+# Esperienza Lavorativa
 
-```js
-let x = 0;
-let arr = [];
-arr.map(p => p.ciao *2)
-```
-
-### Esperienza Lavorativa
-
-### Frontend developer
-**Move Solutions**  
-*Gennaio 2021 - Presente*
+## Frontend developer - Move Solutions spa
+**Gennaio 2022 - Presente**
 
 Presso Move Solutions, ho assunto il ruolo di Frontend Developer e Responsabile dei Progetti Frontend, gestendo un piccolo team di sviluppatori. Le mie principali responsabilità includono:
 
@@ -19,9 +9,8 @@ Presso Move Solutions, ho assunto il ruolo di Frontend Developer e Responsabile 
 - Sviluppo e mantenimento di applicativi web destinati alla rappresentazione ed elaborazione dati provenienti da dispositivi IoT, LoRaWan
 
 
-#### Software Developer
-**Intecs Solutions**  
-*Agosto 2018 - Dicembre 2019*
+## Software Developer - Intecs Solutiona spa
+**Aprile 2019 - Dicembre 2021**
 - Progettazione, sviluppo e testing di applicativi desktop cross-platform per soluzioni automotive em-
 bedded utilizzando tecnlogie web : JavaScript, nodejs, React ed Electron.
 - Attività : Sviluppo hardware e firmware di board embedded prototipali per la gestione di I/O e proto-
@@ -29,22 +18,23 @@ colli PWM, LIN, RS232 e SCPI. Sviluppo di moduli backend per la gestione di segn
 board embedded. Sviluppo di moduli frontend per log, trace e rappresentazione grafica di messagi
 da e verso board embedded
 
-#### Embedded Software Engineer (Consulente Intecs)
-**STMICROELECTRONICS**  
-*Agosto 2018 - Dicembre 2019*
+## Embedded Software Engineer - ST Microelectronics
+**Giugno 2019 - Dicembre 2020**
 - Progettazione, sviluppo, testing e manutenzione MCAL (Autosar) www.st.com/en/
 automotive-microcontrollers.html
 - Attività : ASPICE, analisi di software requirement, debug, testing, analisi statica, coverage
 
 
+---
 
-### Istruzione
+# Istruzione
 
-#### Laurea Triennale in Informatica
-**Università degli Studi di Milano**  
-*Settembre 2015 - Luglio 2018*
+## Laurea Triennale in Ingegneria Elettronica - Università di Pisa
+**Febbraio 2019**
 - Principali materie di studio: programmazione, algoritmi, ingegneria del software.
 
+
+---
 
 ### Competenze Tecniche
 

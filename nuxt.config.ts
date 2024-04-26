@@ -20,5 +20,5 @@ export default defineNuxtConfig({
     }
   },
   modules: ["nuxt-primevue", "@nuxt/content", "nuxt-icon"],
-  css: ["primevue/resources/themes/aura-dark-green/theme.css", "primeflex/primeflex.css", "primeicons/primeicons.css"],
+  css: ["primevue/resources/themes/aura-dark-green/theme.css", "primeflex/primeflex.css", "primeicons/primeicons.css", "~/assets/index.css"],
 });
