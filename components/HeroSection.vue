@@ -2,7 +2,7 @@
   <div
     class="p-4"
   >
-    <div class="text-6xl font-bold text-special w-max">Vue.js Developer</div>
+    <div class="text-6xl font-bold text-special">Vue.js Developer</div>
     <p>
       Mario Rossi è un programmatore frontend altamente competente con una
       solida esperienza nello sviluppo e nella manutenzione di applicazioni web.
