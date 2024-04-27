@@ -1,6 +1,7 @@
 
 @import './background-aimation.css';
 @import './markdown.css';
+@import './overwrite-primevue.css';
 
 /* Stile base per l'intera applicazione */
 body {
@@ -21,3 +22,5 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+

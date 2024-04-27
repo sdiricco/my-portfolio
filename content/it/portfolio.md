@@ -1,3 +1,10 @@
+---
+author: 'Simone Di Ricco'
+role: 'Frontend Developer'
+lastJob: '[2021 - Presente] Front end Developer at Move Solutions'
+school: 'Graduated with Electronic Engineer'
+---
+
 # Esperienza Lavorativa
 
 ## Frontend developer - Move Solutions spa

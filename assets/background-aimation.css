@@ -1,6 +1,6 @@
 /* Animazione di sfondo */
 body {
-  background: linear-gradient(-45deg, #1d1d1d, #006663, #554500);
+  background: linear-gradient(-45deg, #1d1d1d, #003635, #3d3200);
   background-size: 800% 1000%;
   animation: gradient 10s ease infinite;
 }

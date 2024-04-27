@@ -1,0 +1,11 @@
+.p-dropdown:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
