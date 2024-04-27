@@ -51,10 +51,6 @@ onMounted(() => {
 
   // Configure labels
   series.labels.template.setAll({
-    paddingTop: 5,
-    paddingBottom: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
     fontFamily: "Courier New",
     cursorOverStyle: "pointer",
   });

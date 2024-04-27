@@ -1,24 +1,17 @@
 <template>
   <NuxtLayout>
     <ContentRenderer :key="page._id" :value="page" />
-    <PrintJSON :value="page" />
   </NuxtLayout>
 </template>
 
 <script setup>
 import {useMainStore} from "@/stores/index"
-const mainStore = useMainStore()
-const router = useRouter()
+const {language} = storeToRefs(useMainStore())
 const {page} = useContent()
 
-
-router.push(`/${mainStore.language}/portfolio`)
-
-watch(() => mainStore.language, () => {
-  router.push(`/${mainStore.language}/portfolio`)
+onMounted(async()=>{
+  await navigateTo({ path: `/${language.value}/portfolio` })
 })
-
-
-
+watch(language,async () => await navigateTo({ path: `/${language.value}/portfolio` }))
 </script>
 
