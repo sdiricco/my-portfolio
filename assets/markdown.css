@@ -46,7 +46,14 @@
 }
 
 .markdown-body a {
-  color: white; /* Colore dei link in blu chiaro */
+  background: linear-gradient(
+    to right,
+    #a1f7b9,
+    #61f3f3
+  ); /* Gradiente verde-viola per il background dei titoli */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -108,4 +115,12 @@
   font-size: 14px;
   overflow-x: auto;
   color: #ffffff; /* Colore del testo nei blocchi di codice */
+
+}
+
+.markdown-body code {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 2px 4px;
+  
 }
