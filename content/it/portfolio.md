@@ -26,11 +26,12 @@ school: 'Graduated with Electronic Engineer'
 
 
 
-## Embedded Software Engineer - ST Microelectronics
+## Embedded Software Developer - ST Microelectronics
 **Giugno 2019 - Dicembre 2020**
-- Progettazione, sviluppo, testing e manutenzione MCAL (Autosar) www.st.com/en/
-automotive-microcontrollers.html
-- Attività : ASPICE, analisi di software requirement, debug, testing, analisi statica, coverage
+- Sviluppo modulo **MCAL** secondo le specifiche **Autosar**, [ST - Automotive](https://www.st.com/en/automotive-microcontrollers.html).
+- Sviluppo software secondo il modello **ASPICE** (Automotive SPICE) che comprende software requirement Analysis, Software Design, Software Unit Verification, Software Qualification Test 
+
+`C` `AUTOSAR` `Code Coverage` `Git` `Bugzilla` `MCAL` `EB TRESOS` `Polyspace` `MISRA2012` `Doxygen` `TRACE32` `UML`
 
 
 ---
