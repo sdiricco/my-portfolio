@@ -3,6 +3,7 @@ author: 'Simone Di Ricco'
 role: 'Frontend Developer'
 lastJob: '[2021 - Presente] Front end Developer at Move Solutions'
 school: 'Graduated with Electronic Engineer'
+description: "Simone Di Ricco ha esperienza come sviluppatore frontend e embedded, con un focus particolare sulle tecnologie web e sullo sviluppo software per applicazioni automotive. Simone ha ricoperto ruoli chiave presso Move Solutions, Intecs Solutions e ST Microelectronics, lavorando su progetti che spaziano dallo sviluppo di piattaforme IoT al testing e monitoraggio di sistemi automotive. Ha una laurea triennale in Ingegneria Elettronica dall Università di Pisa e ha completato una tesi sul confronto delle prestazioni di Timer RTC. Il suo CV riflette un impegno costante nell esplorare nuove tecnologie attraverso progetti personali e professionali."
 ---
 
 # Esperienza Lavorativa
@@ -40,13 +41,16 @@ school: 'Graduated with Electronic Engineer'
 
 ## Laurea Triennale in Ingegneria Elettronica - Università di Pisa
 **Febbraio 2019**
-- Principali materie di studio: programmazione, algoritmi, ingegneria del software.
+
+**Tesi**:  Sviluppo di un driver in linguaggio C per la gestione del Timer RTC (Real Time Clock) integrato in ATMEGA32A e confronto
+delle prestazioni di RTC general purpose al quarzo e RTC per applicazioni Ultra Low Power basati su ROSC
 
 ---
 
 
-### Progetti Personali
+# Progetti
+
+Sul mio [profilo linkedin](https://github.com/sdiricco) puoi trovare diversi progetti realizzati soprattutto con lo scopo di esplorare nuove tecnologie. 
 
 
-Per ulteriori dettagli e referenze, non esitate a contattarmi via email all'indirizzo mario.rossi@email.com.
 

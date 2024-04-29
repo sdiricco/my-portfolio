@@ -56,10 +56,6 @@
   </div>
 </template>
 <script setup>
-import { useMainStore } from "@/stores/index";
-
-const mainStore = useMainStore();
-
 const {page} = useContent();
 </script>
 

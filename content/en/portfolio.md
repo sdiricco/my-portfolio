@@ -38,7 +38,9 @@ automotive-microcontrollers.html
 
 ## Laurea Triennale in Ingegneria Elettronica - Università di Pisa
 **Febbraio 2019**
-- Principali materie di studio: programmazione, algoritmi, ingegneria del software.
+
+**Tesi**:  Sviluppo di un driver in linguaggio C per la gestione del Timer RTC (Real Time Clock) integrato in ATMEGA32A e confronto
+delle prestazioni di RTC general purpose al quarzo e RTC per applicazioni Ultra Low Power basati su ROSC
 
 
 ---
