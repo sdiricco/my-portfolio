@@ -5,7 +5,7 @@
       {{ page.description }}
     </p>
     <ClientOnly>
-      <Amchart5 />
+      <Amchart5V3 />
     </ClientOnly>
   </div>
 </template>
