@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  components: { global: true, dirs: ["~/components"] },
   content: {
     documentDriven: true,
     highlight: {
@@ -17,7 +18,7 @@ export default defineNuxtConfig({
         },
         'remark-gfm': {}
       },
-    }
+    },
   },
   modules: ["nuxt-primevue", "@nuxt/content", "nuxt-icon", '@pinia/nuxt'],
   css: ["primevue/resources/themes/aura-dark-green/theme.css", "primeflex/primeflex.css", "primeicons/primeicons.css", "~/assets/index.css"],

@@ -50,7 +50,7 @@ delle prestazioni di RTC general purpose al quarzo e RTC per applicazioni Ultra 
 
 # Progetti
 
-Sul mio [profilo linkedin](https://github.com/sdiricco) puoi trovare diversi progetti realizzati soprattutto con lo scopo di esplorare nuove tecnologie. 
+Sul mio [profilo GitHub](https://github.com/sdiricco) puoi trovare diversi progetti realizzati soprattutto con lo scopo di esplorare nuove tecnologie. 
 
 
 

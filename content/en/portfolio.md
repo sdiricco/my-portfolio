@@ -1,78 +1,56 @@
 ---
 author: 'Simone Di Ricco'
 role: 'Frontend Developer'
-lastJob: '[2021 - Presente] Front end Developer at Move Solutions'
+lastJob: '[2021 - Present] Front end Developer at Move Solutions'
 school: 'Graduated with Electronic Engineer'
+description: "Simone Di Ricco has experience as a frontend and embedded developer, with a particular focus on web technologies and software development for automotive applications. Simone has held key roles at Move Solutions, Intecs Solutions, and ST Microelectronics, working on projects ranging from IoT platform development to testing and monitoring automotive systems. He holds a Bachelor's degree in Electronic Engineering from the University of Pisa and completed a thesis on comparing the performance of RTC Timer. His CV reflects a constant commitment to exploring new technologies through personal and professional projects."
 ---
 
-# Experience Lavorativa
+# Work Experience
 
-## Frontend developer - Move Solutions spa
-**Gennaio 2022 - Presente**
+::company{logo="https://media.licdn.com/dms/image/C4D0BAQHWiBCydb3t2A/company-logo_100_100/0/1630576008981/movesolutions_logo?e=1722470400&v=beta&t=pmBxcUjNBhWO37mijvUY63Mn4s-28HYYoPzVfO5iaXk" name="Move Solutions" role="Frontend Lead" period="Gen 2022 - Presente" city="Lucca, Toscana, Italia"}
+::
 
-Presso Move Solutions, ho assunto il ruolo di Frontend Developer e Responsabile dei Progetti Frontend, gestendo un piccolo team di sviluppatori. Le mie principali responsabilità includono:
+At Move Solutions, I hold the position of frontend developer and supervisor of a small team of frontend developers.
+I mainly work on [MyMove](https://www.movesolutions.it/mymove-iot-platform/), a platform for monitoring infrastructures that integrates wireless IoT sensors.
 
-- Progettazione e sviluppo di applicativi desktop cross-platform per dispositivi embedded IoT utilizzando tecnlogie web : JavaScript, Python, Node.js, Plotly.js, Electron..
-- Sviluppo e mantenimento di applicativi web destinati alla rappresentazione ed elaborazione dati provenienti da dispositivi IoT, LoRaWan
+::tecnologies{:items='["Nuxt", "Vue", "React"]'}
+::
 
-
-## Software Developer - Intecs Solutiona spa
-**Aprile 2019 - Dicembre 2021**
-- Progettazione, sviluppo e testing di applicativi desktop cross-platform per soluzioni automotive em-
-bedded utilizzando tecnlogie web : JavaScript, nodejs, React ed Electron.
-- Attività : Sviluppo hardware e firmware di board embedded prototipali per la gestione di I/O e proto-
-colli PWM, LIN, RS232 e SCPI. Sviluppo di moduli backend per la gestione di segnali fisici da e verso
-board embedded. Sviluppo di moduli frontend per log, trace e rappresentazione grafica di messagi
-da e verso board embedded
-
-## Embedded Software Engineer - ST Microelectronics
-**Giugno 2019 - Dicembre 2020**
-- Progettazione, sviluppo, testing e manutenzione MCAL (Autosar) www.st.com/en/
-automotive-microcontrollers.html
-- Attività : ASPICE, analisi di software requirement, debug, testing, analisi statica, coverage
+`Vue.js` `Primevue` `Electron.js` `i18n` `VueRouter` `Pinia` `axios` `Amcharts` `Plotly.js` `TypeScript`
 
 
----
+## Software Developer - Intecs Solutions spa
+**April 2019 - December 2021**
 
-# Istruzione
+- At Intecs Solutions, I worked on the development of a desktop app for testing and monitoring the performance of pumps for the automotive sector.
+- The desktop application was developed with **Electron.js** and **React.js** integrating modules in **node.js** for managing **PWM**, **LIN**, **RS232**, **SCPI** protocols.
 
-## Laurea Triennale in Ingegneria Elettronica - Università di Pisa
-**Febbraio 2019**
+`Electron.js` `Arduino` `React.js` `MUI` `Node.js` `PWM` `LIN` `RS232` `SCPI`
 
-**Tesi**:  Sviluppo di un driver in linguaggio C per la gestione del Timer RTC (Real Time Clock) integrato in ATMEGA32A e confronto
-delle prestazioni di RTC general purpose al quarzo e RTC per applicazioni Ultra Low Power basati su ROSC
+
+
+## Embedded Software Developer - ST Microelectronics
+**June 2019 - December 2020**
+- Development of **MCAL** module according to **Autosar** specifications, [ST - Automotive](https://www.st.com/en/automotive-microcontrollers.html).
+- Software development according to the **ASPICE** (Automotive SPICE) model, including Software Requirement Analysis, Software Design, Software Unit Verification, Software Qualification Test.
+
+`C` `AUTOSAR` `Code Coverage` `Git` `Bugzilla` `MCAL` `EB TRESOS` `Polyspace` `MISRA2012` `Doxygen` `TRACE32` `UML`
 
 
 ---
 
-### Competenze Tecniche
+# Education
 
-- Linguaggi di Programmazione: JavaScript, TypeScript, HTML, CSS/SASS
-- Framework/Librerie: React.js, Vue.js, Bootstrap
-- Strumenti di Versionamento: Git, GitHub
-- Design e Prototipazione: Figma, Adobe XD
-- Metodologie Agili: Scrum, Kanban
-- Conoscenze base di Backend: Node.js, Express.js
+## Bachelor's Degree in Electronic Engineering - University of Pisa
+**February 2019**
 
+**Thesis**: Development of a driver in C language for managing the Timer RTC (Real Time Clock) integrated in ATMEGA32A and comparison of the performances of general purpose RTC and RTC for Ultra Low Power applications based on ROSC.
 
-### Progetti Personali
-
-#### Portfolio Website
-*Gennaio 2023 - Presente*
-- Creazione di un sito web personale per mostrare progetti e competenze.
-- Utilizzo di React.js per la gestione delle interfacce dinamiche.
-
-#### Quiz App
-*Aprile 2022*
-- Realizzazione di un'applicazione web per quiz interattivi con JavaScript e Bootstrap.
+---
 
 
-### Altre Informazioni
+# Projects
 
-- Lingue: Italiano (madrelingua), Inglese (livello avanzato)
-- Portfolio online: [mario-rossi.dev](https://www.mario-rossi.dev)
-- Profilo GitHub: [github.com/mario-rossi](https://github.com/mario-rossi)
-
-
-Per ulteriori dettagli e referenze, non esitate a contattarmi via email all'indirizzo mario.rossi@email.com.
+On my [GitHub profile](https://github.com/sdiricco), you can find several projects mainly aimed at exploring new technologies.
 
