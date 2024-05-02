@@ -8,7 +8,10 @@ description: "Simone Di Ricco has experience as a frontend and embedded develope
 
 # Work Experience
 
-::company{logo="https://media.licdn.com/dms/image/C4D0BAQHWiBCydb3t2A/company-logo_100_100/0/1630576008981/movesolutions_logo?e=1722470400&v=beta&t=pmBxcUjNBhWO37mijvUY63Mn4s-28HYYoPzVfO5iaXk" href="" name="Move Solutions" role="Frontend Lead" period="Gen 2022 - Presente" city="Lucca, Toscana, Italia"}
+<!-- -------------------------- -->
+<!--MOVE SOLUTIONS EXPERIENCE-->
+<!-- -------------------------- -->
+::company{name="Move Solutions" role="Frontend Lead" period="Gen 2022 - Presente" city="Lucca, Toscana, Italia" logo="https://media.licdn.com/dms/image/C4D0BAQHWiBCydb3t2A/company-logo_100_100/0/1630576008981/movesolutions_logo?e=1722470400&v=beta&t=pmBxcUjNBhWO37mijvUY63Mn4s-28HYYoPzVfO5iaXk" href="https://www.movesolutions.it/"  }
 ::
 
 At Move Solutions, I hold the position of frontend developer and supervisor of a small team of frontend developers.
