@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   components: { global: true, dirs: ["~/components"] },
+  runtimeConfig: {
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+  },
   content: {
     documentDriven: true,
     highlight: {

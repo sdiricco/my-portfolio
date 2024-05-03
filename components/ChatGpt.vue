@@ -7,7 +7,8 @@
 </template>
 
 <script setup lang="ts">
-const { messages, execGpt } = useGpt();
+import {OPENAI_API_KEY} from "@/constants"
+const { messages, execGpt, initialize } = useChatGpt();
 const messageContents = computed(() =>
   messages.value.map((message) => message.content)
 );
@@ -16,4 +17,8 @@ const inputString = ref("");
 async function main() {
   execGpt(inputString.value);
 }
+
+onMounted(()=> {
+  initialize({apiKey: OPENAI_API_KEY})
+})
 </script>

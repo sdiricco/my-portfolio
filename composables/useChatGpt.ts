@@ -6,7 +6,8 @@ interface IGPTResponse{
     messages: Ref<IMessage[]>,
     status: Ref<number>,
     systemMessage: Ref<IMessage>,
-    execGpt: (input: string) => Promise<void>
+    execGpt: (input: string) => Promise<void>,
+    initialize: ({apiKey}: {apiKey?: string}) => void
 }
 
 export interface IMessage{
@@ -16,10 +17,7 @@ export interface IMessage{
 
 const JSONClone = (obj:any) => JSON.parse(JSON.stringify(obj)); 
 
-const openAi = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  dangerouslyAllowBrowser: true,
-});
+let openAi: OpenAI | undefined = undefined;
 
 const status = ref(0);
 
@@ -36,7 +34,6 @@ const messageAssistant = ref({
 });
 
 
-
 export async function execGpt(input: string){
     status.value = 1;
     messageAssistant.value.content = "";
@@ -46,6 +43,9 @@ export async function execGpt(input: string){
     });
     const messagesClone = JSONClone(messages.value)
     messagesClone.unshift(systemMessage.value)
+    if (!openAi) {
+      return;
+    }
     const stream = await openAi.chat.completions.create({
       messages: messagesClone,
       model: "gpt-3.5-turbo",
@@ -67,13 +67,23 @@ export async function execGpt(input: string){
   
   }
 
-export function useGpt(): IGPTResponse {
+  export function initialize({apiKey}: {apiKey?: string}){
+    openAi = new OpenAI({
+      apiKey,
+      dangerouslyAllowBrowser: true,
+    });
+  }
+  
+
+export function useChatGpt(): IGPTResponse {
   return {
     messageAssistant,
     messages,
     status,
     systemMessage,
     execGpt,
+    initialize
   };
 }
+
 
