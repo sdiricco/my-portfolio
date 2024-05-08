@@ -15,3 +15,5 @@ onMounted(async()=>{
 watch(language,async () => await navigateTo({ path: `/${language.value}/portfolio` }))
 </script>
 
+
+

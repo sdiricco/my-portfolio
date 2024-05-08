@@ -1,47 +1,55 @@
 <template>
-  <!-- <div class="flex flex-column gap-2 w-20rem">
-    <Textarea v-model:model-value="inputString"></Textarea>
-    <Button @click="main">Send</Button>
-    <div v-for="message in messages" :key="message.content">{{ message }}</div>
-  </div> -->
   <!---------------------------->
   <!--Main container-->
   <!---------------------------->
-  <div class="overflow-auto flex flex-column border-1 m-4" style="height: 50vh">
-    <!---------------------------->
-    <!--Messages container-->
-    <!---------------------------->
-    <div id="messages-container" class="h-full overflow-auto p-3">
-      <div
-        v-for="(message, index) in messages"
-        :key="`message-${index}-${message.content}`"
-        class="mb-4"
-      >
-        <div class="text-xl text-primary font-bold">
-          {{ capitalize(message.role) }}
-        </div>
-        <div class="text-color text-xl">{{ message.content }}</div>
-      </div>
-      <div v-if="status === 1">
-        <div class="text-xl text-primary font-bold">
-          {{ capitalize(messageAssistant.role) }}
-        </div>
+  <div class="flex justify-content-center">
+    <div
+      class="overflow-auto flex flex-column m-4 border-round shadow-5"
+      style="height: 50vh; width: 500px"
+    >
+      <!---------------------------->
+      <!--Messages container-->
+      <!---------------------------->
+      <div id="messages-container" class="h-full overflow-auto p-3">
         <div
-          class="text-xl text-color"
-        >{{ messageAssistant.content }}</div>
+          v-for="(message, index) in messages"
+          :key="`message-${index}-${message.content}`"
+          class="mb-2"
+        >
+          <template v-if="message.role === 'assistant'">
+            <div class="flex align-items-center justify-content-start">
+              <div
+                class="border-round-xl bg-white-alpha-20 px-3 py-2 max-w-20rem"
+              >
+                <div class="text-color">{{ message.content }}</div>
+              </div>
+            </div>
+          </template>
+          <template v-else>
+            <div class="flex align-items-center justify-content-end">
+              <div
+                class="border-round-xl bg-black-alpha-20 px-3 py-2 max-w-20rem"
+              >
+                <div class="text-colorl">{{ message.content }}</div>
+              </div>
+            </div>
+          </template>
+        </div>
+        <div v-if="status === 1">
+          <div class="flex align-items-center justify-content-start">
+            <div
+              class="border-round-xl bg-white-alpha-20 px-3 py-2 max-w-20rem"
+            >
+              <div class="text-color">{{ messageAssistant.content }}</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="flex align-items-end p-2 m-3 border-round-3xl">
-      <Textarea
-        v-model="inputString"
-        autoResize
-        rows="1"
-        cols="2"
-        class="custom-textarea w-full border-round-3xl text-xl"
-        style="background: transparent"
-      />
-      <div class="cursor-pointer m-2 mx-4" @click="sendMessageToChatGpt">
-        <i class="pi pi-send text-primary text-2xl"></i>
+      <div class="border-top-1 surface-border flex align-items-end px-3 py-2">
+        <InputGroup>
+          <InputText v-model="inputString" class="w-full" />
+          <Button @click="sendMessageToChatGpt" icon="pi pi-send"></Button>
+        </InputGroup>
       </div>
     </div>
   </div>
@@ -50,9 +58,22 @@
 <script setup lang="ts">
 import { capitalize } from "lodash";
 import { OPENAI_API_KEY } from "@/constants";
-const { messages, messageAssistant, status, execGpt } = useChatGpt({
-  apiKey: OPENAI_API_KEY,
-});
+const { data } = await useAsyncData("home", () =>
+  queryContent("/en/portfolio").findOne()
+);
+
+console.log(data);
+const { messages, messageAssistant, status, execGpt, systemMessage } =
+  useChatGpt({
+    apiKey: OPENAI_API_KEY,
+  });
+
+const cv = JSON.stringify(data.value?.body?.children);
+
+systemMessage.value = {
+  role: "system",
+  content: `Sei un assistente di un candidato che ha il seguente curriculum parsato in markdown ${cv}. Rispondi ai recruiter.`,
+};
 
 const scrollToBottom = async () => {
   await nextTick();
