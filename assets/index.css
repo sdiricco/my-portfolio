@@ -1,29 +1,14 @@
 
+@import './reset.css';
+@import './default.css';
+@import './common.css';
+@import './overwrite-primevue.css';
 @import './background-aimation.css';
 @import './markdown.css';
-@import './overwrite-primevue.css';
-
-/* Stile base per l'intera applicazione */
-body {
-  margin: 0px;
-  font-family: Arial, sans-serif;
-  color: #ffffff; /* Colore del testo */
-  height: 100vh;
-}
+@import './hljs.css';
 
 
 
-.text-special {
-  background: linear-gradient(
-    to right,
-    #a1f7b9,
-    #61f3f3
-  ); /* Gradiente verde-viola per il background dei titoli */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-p {
-  margin: 0px;
-}
+
 

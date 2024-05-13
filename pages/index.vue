@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-column justify-content-center">
-        <ChatGpt></ChatGpt>
+        <AIChatRoot></AIChatRoot>
         <div>
             <Button @click="goToCv">Vai al cv tradizionale</Button>
 

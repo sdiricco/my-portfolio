@@ -42,12 +42,10 @@ onMounted(() => {
       target: series.labels.template,
       dataField: "value",
       min: am5.color(0xffd4c2),
-      max: am5.color(0xff621f), 
+      max: am5.color(0xff621f),
       key: "fill",
     },
   ]);
-
-
 
 
   series.data.setAll([
@@ -76,6 +74,18 @@ onMounted(() => {
     { category: "Html5", value: 2.8 },
     { category: "Css3", value: 2.8 },
   ]);
+
+  setInterval(function () {
+    am5.array.each(series.dataItems, function (dataItem) {
+      const category = dataItem.get('category');
+      if (category !== 'Vue.js') {
+        const value = Math.random() * 3;
+        dataItem.set("value", value);
+        dataItem.set("valueWorking", value);
+      }
+
+    })
+  }, 5000)
 
 
 });
