@@ -43,7 +43,7 @@ const props = withDefaults(defineProps<MoveDialogProps>(), {
 const slots = useSlots();
 const slotNamesArray = Object.keys(slots) as SlotNames[];
 
-const fullScreenClasses = 'h-full max-h-full';
+const fullScreenClasses = 'h-full max-h-full w-full';
 const noBorderClasses = 'border-none shadow-none';
 
 const getSizeClasses = computed(() => {
