@@ -7,7 +7,6 @@ interface IGPTResponse{
     status: Ref<number>,
     systemMessage: Ref<IMessage>,
     execGpt: (input: string) => Promise<void>,
-    initialize: ({apiKey}: {apiKey?: string}) => void
 }
 
 export interface IMessage{
@@ -67,7 +66,7 @@ export async function execGpt(input: string){
   
   }
 
-  export function initialize({apiKey}: {apiKey?: string}){
+  function initializeOpenAI({apiKey}: {apiKey?: string}){
     openAi = new OpenAI({
       apiKey,
       dangerouslyAllowBrowser: true,
@@ -75,14 +74,14 @@ export async function execGpt(input: string){
   }
   
 
-export function useChatGpt(): IGPTResponse {
+export function useChatGpt({apiKey}: {apiKey?: string}): IGPTResponse {
+  initializeOpenAI({apiKey});
   return {
     messageAssistant,
     messages,
     status,
     systemMessage,
     execGpt,
-    initialize
   };
 }
 

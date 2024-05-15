@@ -1,0 +1,8 @@
+.text-special {
+  background: linear-gradient(to right,
+      #a1f7b9,
+      #61f3f3);
+  /* Gradiente verde-viola per il background dei titoli */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
