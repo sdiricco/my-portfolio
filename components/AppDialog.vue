@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import type { DialogProps, DialogPassThroughOptions } from 'primevue/dialog';
 import type { PassThrough } from 'primevue/ts-helpers';
-import { mergeWith } from 'lodash';
+import _ from 'lodash';
 
 const attrs = useAttrs();
 const emit = defineEmits();
@@ -107,7 +107,7 @@ function customizer(objValue: any, srcValue: any) {
 }
 
 const pt = computed(() => {
-    const result = props.extendedPt ? mergeWith(defaultPt, props.extendedPt, customizer) : defaultPt;
+    const result = props.extendedPt ? _.mergeWith(defaultPt, props.extendedPt, customizer) : defaultPt;
     return result;
 });
 </script>

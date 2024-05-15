@@ -30,7 +30,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.0",
+    "@types/lodash": "^4.17.1",
     "nuxt-chatgpt": "^0.2.3",
     "nuxt-icon": "^0.6.10",
     "nuxt-primevue": "^0.3.1"

@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   components: { global: true, dirs: ["~/components"] },
-  runtimeConfig: {
-    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
-  },
   content: {
     documentDriven: true,
     highlight: {
@@ -21,6 +18,11 @@ export default defineNuxtConfig({
         "remark-gfm": {},
       },
     },
+  },
+  runtimeConfig: {
+    public: {
+      openaiApiKey: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+    }
   },
   modules: [
     "nuxt-primevue",

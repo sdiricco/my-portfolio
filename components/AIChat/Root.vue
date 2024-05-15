@@ -20,17 +20,22 @@
 </template>
 
 <script setup lang="ts">
-import { OPENAI_API_KEY } from "@/constants";
 import { marked } from "~/services/marked";
+const config = useRuntimeConfig()
+console.log('Runtime config:', config)
+
 
 const { data } = await useAsyncData("home", () =>
   queryContent("/en/portfolio").findOne()
+
 );
 
 console.log(data);
+
+
 const { messages, messageAssistant, status, execGpt, systemMessage } =
   useChatGpt({
-    apiKey: OPENAI_API_KEY,
+    apiKey: config.public.openaiApiKey as string,
   });
 
 const messagesHtml = computed(() =>
