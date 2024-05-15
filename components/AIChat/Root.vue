@@ -73,22 +73,3 @@ onMounted(() => {
   scrollToBottom();
 });
 </script>
-
-
-<style>
-.ai-input {
-  height: 50px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: calc(100% - 3rem);
-  padding: 1.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.ai-input .wrapper {
-  width: 100%;
-  max-width: 1200px;
-}
-</style>
