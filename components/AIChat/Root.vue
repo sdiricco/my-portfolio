@@ -1,30 +1,20 @@
 <template>
-  <!---------------------------->
-  <!--Main container-->
-  <!---------------------------->
-  <div class="flex justify-content-center">
-    <div
-      class="overflow-auto flex flex-column m-4 border-round shadow-5"
-      style="height: 50vh; width: 1200px"
-    >
+  <div class="h-full flex flex-column">
+    <div id="messages-container" class="flex flex-1 overflow-auto justify-content-center">
       <!---------------------------->
       <!--Messages container-->
       <!---------------------------->
-      <div id="messages-container" class="h-full overflow-auto p-3">
-        <div
-          v-for="(message, index) in messagesHtml"
-          :key="`message-${index}-${message.id}`"
-          class="mb-4"
-        >
-          <AIChatMessage icon="carbon:user-avatar-filled" :role="message.role" :value="message.html"/>
+      <div class="h-full px-3" style="padding-bottom: 90px;width: 980px;" >
+        <div v-for="(message, index) in messagesHtml" :key="`message-${index}-${message.id}`" class="mb-4">
+          <AIChatMessage icon="carbon:user-avatar-filled" :role="message.role" :value="message.html" />
         </div>
         <div v-if="status === 1">
-          <AIChatMessage icon="carbon:user-avatar-filled" role="assistant" :value="messageAssistantHtml.html"/>
+          <AIChatMessage icon="carbon:user-avatar-filled" role="assistant" :value="messageAssistantHtml.html" />
         </div>
       </div>
-      <div class="border-top-1 surface-border flex align-items-end px-3 py-2">
-        <AIChatInput @send="sendMessageToChatGpt" v-model:value="inputString"/>
-      </div>
+    </div>
+    <div class="p-4 flex justify-content-center" >
+      <AIChatInput @send="sendMessageToChatGpt" v-model:value="inputString" style="max-width: 980px;" />
     </div>
   </div>
 </template>
@@ -61,7 +51,7 @@ const cv = JSON.stringify(data.value?.body?.children);
 
 systemMessage.value = {
   role: "system",
-  content: `Sei un assistente di un candidato che ha il seguente curriculum parsato in markdown ${cv}. Rispondi ai recruiter.`,
+  content: `Sei un assistente di un candidato che ha il seguente curriculum parsato in markdown ${cv}. Rispondi ai recruiter enfatizzando in markdown.`,
 };
 
 const scrollToBottom = async () => {
@@ -84,3 +74,21 @@ onMounted(() => {
 });
 </script>
 
+
+<style>
+.ai-input {
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: calc(100% - 3rem);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ai-input .wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+</style>
