@@ -1,7 +1,7 @@
 <template>
   <InputGroup>
-    <InputText v-model="value" @keyup.enter="emit('send')" class="w-full" />
-    <Button @click="emit('send')" icon="pi pi-send"></Button>
+    <InputText v-model="value" @keyup.enter="emit('send')" class="px-4 py-3 w-full border-round-left-3xl" />
+    <Button @click="emit('send')" class="px-4 border-round-right-3xl" icon="pi pi-send"></Button>
   </InputGroup>
 </template>
 

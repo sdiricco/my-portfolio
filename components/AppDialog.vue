@@ -67,7 +67,7 @@ const rootClasses = computed(() => `p-0 m-0 border-none ${getSizeClasses.value}`
 const contentClasses = `h-full p-0 round-none shadow-none border-noround`;
 
 const headerContrast = {
-    primary: 'bg-primary text-primary',
+    primary: '',
     secondary: 'bg-primary-reverse text-color',
     warning: 'bg-yellow-500 text-0',
     danger: 'bg-red-500 text-0'

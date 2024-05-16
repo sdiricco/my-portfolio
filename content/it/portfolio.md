@@ -1,56 +1,63 @@
 ---
 author: 'Simone Di Ricco'
 role: 'Frontend Developer'
-lastJob: '[2021 - Presente] Front end Developer at Move Solutions'
-school: 'Graduated with Electronic Engineer'
-description: "Simone Di Ricco ha esperienza come sviluppatore frontend e embedded, con un focus particolare sulle tecnologie web e sullo sviluppo software per applicazioni automotive. Simone ha ricoperto ruoli chiave presso Move Solutions, Intecs Solutions e ST Microelectronics, lavorando su progetti che spaziano dallo sviluppo di piattaforme IoT al testing e monitoraggio di sistemi automotive. Ha una laurea triennale in Ingegneria Elettronica dall Università di Pisa e ha completato una tesi sul confronto delle prestazioni di Timer RTC. Il suo CV riflette un impegno costante nell esplorare nuove tecnologie attraverso progetti personali e professionali."
+lastJob: '[2021 - Presente] Front end Developer presso Move Solutions'
+school: 'Laureato in Ingegneria Elettronica'
+description: "Simone Di Ricco ha esperienza come sviluppatore frontend ed embedded, con un particolare focus sulle tecnologie web e sullo sviluppo software per applicazioni automobilistiche. Simone ha ricoperto ruoli chiave presso Move Solutions, Intecs Solutions e ST Microelectronics, lavorando su progetti che spaziano dallo sviluppo di piattaforme IoT al testing e monitoraggio di sistemi automobilistici. Ha conseguito una laurea in Ingegneria Elettronica presso l'Università di Pisa e ha completato una tesi sul confronto delle prestazioni dei Timer RTC. Il suo CV riflette un costante impegno nell'esplorare nuove tecnologie attraverso progetti personali e professionali."
 ---
 
 # Esperienza Lavorativa
 
-## Frontend lead - Move Solutions spa
-**Gennaio 2022 - Presente**
+<!-- -------------------------- -->
+<!-- ESPERIENZA MOVE SOLUTIONS -->
+<!-- -------------------------- -->
+::company{name="Move Solutions" role="Frontend Lead" period="Gen 2022 - Presente" city="Lucca, Toscana, Italia" logo="https://media.licdn.com/dms/image/C4D0BAQHWiBCydb3t2A/company-logo_100_100/0/1630576008981/movesolutions_logo?e=1722470400&v=beta&t=pmBxcUjNBhWO37mijvUY63Mn4s-28HYYoPzVfO5iaXk" href="https://www.movesolutions.it/"  }
+::
 
-- Presso Move Solutions, ricopro il ruolo di sviluppatore frontend e supervisore di un piccolo team di sviluppatori frontend.
-- Mi occupo principalmente di [MyMove](https://www.movesolutions.it/mymove-iot-platform/) una piattaforma per il monitoraggio di infrastrutture che integra  sensori wireless IoT.
+Presso Move Solutions, ricopro la posizione di frontend developer e supervisore di un piccolo team di sviluppatori frontend.
+Lavoro principalmente su [MyMove](https://www.movesolutions.it/mymove-iot-platform/), una piattaforma per il monitoraggio delle infrastrutture che integra sensori IoT wireless.
 
-`Vue.js`  `Primevue` `Electron.js` `i18n` `VueRouter` `Pinia` `axios` `Amcharts` `Plotly.js` `TypeScript`
+::tecnologies{:items='["Vue.js", "Primevue", "Electron.js", "i18n", "VueRouter", "Pinia", "axios", "Amcharts", "Plotly.js", "TypeScript"]'}
+::
 
+<br/>
+<br/>
 
-## Software Developer - Intecs Solutions spa
-**Aprile 2019 - Dicembre 2021**
+::company{logo="https://media.licdn.com/dms/image/D560BAQHeg7ka4DaRnQ/company-logo_100_100/0/1690899580264/intecs_logo?e=1722470400&v=beta&t=ZD7E5fVf7N0-4sCdWK79FuR6RcGvakytGnjW-SncmRY" href="https://intecs.it/page/homepage" name="Intecs Solutions" role="Software Developer" period="Apr 2019 - Mar 2022" city="Pisa, Toscana, Italia"}
+::
 
-- Presso Intecs Solutions, mi sono occupato dello sviluppo di un'app desktop per il testing e il monitoraggio delle prestazioni di pompe per il settore automotive.
-- L'applicazione desktop è stata sviluppata con **Electron.js** e **React.js** integrando moduli in **node.js** per la gestione dei protocolli **PWM**, **LIN**, **RS232**, **SCPI**.
+Presso Intecs Solutions, ho lavorato allo sviluppo di un'app desktop per il testing e il monitoraggio delle prestazioni delle pompe per il settore automobilistico.
+L'applicazione desktop è stata sviluppata con **Electron.js** e **React.js**, integrando moduli in **node.js** per la gestione dei protocolli **PWM**, **LIN**, **RS232**, **SCPI**.
 
-`Electron.js` `Arduino` `React.js` `MUI` `Node.js` `PWM` `LIN` `RS232` `SCPI`
+::tecnologies{:items='["Node.js", "Electron.js", "Arduino", "MUI", "PWM", "LIN", "RS232", "SCPI"]'}
+::
 
+<br/>
+<br/>
 
+::company{logo="https://media.licdn.com/dms/image/C4D0BAQFyQ-q6iu6L0g/company-logo_100_100/0/1630544071888/stmicroelectronics_logo?e=1722470400&v=beta&t=RPqMYPDFTyMHtbowqhZSbD8_AGmW3UNh0KML_ZaqRMY" href="https://www.st.com/" name="STMicroelectronics" role="Embedded Developer" period="Giu 2019 - Gen 2021" city="Arzano (NA), Campania, Italia"}
+::
 
-## Embedded Software Developer - ST Microelectronics
-**Giugno 2019 - Dicembre 2020**
-- Sviluppo modulo **MCAL** secondo le specifiche **Autosar**, [ST - Automotive](https://www.st.com/en/automotive-microcontrollers.html).
-- Sviluppo software secondo il modello **ASPICE** (Automotive SPICE) che comprende software requirement Analysis, Software Design, Software Unit Verification, Software Qualification Test 
+Sviluppo del modulo **MCAL** secondo le specifiche **Autosar**, [ST - Automotive](https://www.st.com/en/automotive-microcontrollers.html).
+Sviluppo software secondo il modello **ASPICE** (Automotive SPICE), comprendente Analisi dei Requisiti Software, Progettazione Software, Verifica dell'Unità Software, Test di Qualificazione Software.
 
-`C` `AUTOSAR` `Code Coverage` `Git` `Bugzilla` `MCAL` `EB TRESOS` `Polyspace` `MISRA2012` `Doxygen` `TRACE32` `UML`
+::tecnologies{:items='["C", "AUTOSAR", "Code Coverage", "Git", "Bugzilla", "MCAL", "EB TRESOS", "Polyspace", "MISRA2012", "Doxygen", "TRACE32", "UML"]'}
+::
 
-
----
+<br/>
+<br/>
+<br/>
 
 # Istruzione
 
-## Laurea Triennale in Ingegneria Elettronica - Università di Pisa
-**Febbraio 2019**
+::company{logo="https://media.licdn.com/dms/image/C510BAQFzeobIVHZw8Q/company-logo_100_100/0/1631329997902?e=1723680000&v=beta&t=edtqQZ8rBGlzP6QGX05kBYO8MRM5M3gEiIFIsR_esYA" href="https://www.unipi.it/" name="Università di Pisa" role="Ingegnere Elettronico" period="Febbraio 2019" city="Pisa, Toscana, Italia"}
+::
 
-**Tesi**:  Sviluppo di un driver in linguaggio C per la gestione del Timer RTC (Real Time Clock) integrato in ATMEGA32A e confronto
-delle prestazioni di RTC general purpose al quarzo e RTC per applicazioni Ultra Low Power basati su ROSC
+**Tesi**: Sviluppo di un driver in linguaggio C per la gestione del Timer RTC (Real Time Clock) integrato in ATMEGA32A e confronto delle prestazioni di RTC generici e RTC per applicazioni Ultra Low Power basati su ROSC.
 
----
-
+<br/>
+<br/>
 
 # Progetti
 
-Sul mio [profilo GitHub](https://github.com/sdiricco) puoi trovare diversi progetti realizzati soprattutto con lo scopo di esplorare nuove tecnologie. 
-
-
-
+Sul mio [profilo GitHub](https://github.com/sdiricco), puoi trovare diversi progetti principalmente mirati all'esplorazione di nuove tecnologie.

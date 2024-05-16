@@ -1,5 +1,5 @@
 <template>
-  <div class="flex align-items-start gap-3 pt-6 pb-3">
+  <div class="flex align-items-start gap-3 py-3">
     <a :href="href">
       <img :src="logo" alt="logo" class="img" />
 

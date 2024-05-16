@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
-
-const props = defineProps({
+defineProps({
   error: Object as () => NuxtError
 })
 </script>
@@ -9,6 +8,5 @@ const props = defineProps({
 <template>
   <div>
     <PrintJSON :value="error"></PrintJSON>
-    <NuxtLink to="/">Go back home</NuxtLink>
   </div>
 </template>

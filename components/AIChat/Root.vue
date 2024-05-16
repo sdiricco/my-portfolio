@@ -56,7 +56,7 @@ const cv = JSON.stringify(data.value?.body?.children);
 
 systemMessage.value = {
   role: "system",
-  content: `Sei un assistente di un candidato che ha il seguente curriculum parsato in markdown ${cv}. Rispondi ai recruiter enfatizzando in markdown.`,
+  content: `Sei un assistente di un candidato che ha il seguente curriculum parsato in markdown ${cv}. Rispondi ai recruiter enfatizzando in markdown. Ti rivolgerai sempre a un recruiter`,
 };
 
 const scrollToBottom = async () => {

@@ -20,6 +20,8 @@ I mainly work on [MyMove](https://www.movesolutions.it/mymove-iot-platform/), a 
 ::tecnologies{:items='["Vue.js", "Primevue", "Electron.js", "i18n", "VueRouter", "Pinia", "axios", "Amcharts", "Plotly.js", "TypeScript"]'}
 ::
 
+<br/>
+<br/>
 
 ::company{logo="https://media.licdn.com/dms/image/D560BAQHeg7ka4DaRnQ/company-logo_100_100/0/1690899580264/intecs_logo?e=1722470400&v=beta&t=ZD7E5fVf7N0-4sCdWK79FuR6RcGvakytGnjW-SncmRY" href="https://intecs.it/page/homepage" name="Intecs Solutions" role="Software Developer" period="Apr 2019 - Mar 2022" city="Pisa, Toscana, Italia"}
 ::
@@ -30,6 +32,8 @@ The desktop application was developed with **Electron.js** and **React.js** inte
 ::tecnologies{:items='["Node.js", "Electron.js", "Arduino", "MUI", "PWM", "LIN", "RS232", "SCPI"]'}
 ::
 
+<br/>
+<br/>
 
 ::company{logo="https://media.licdn.com/dms/image/C4D0BAQFyQ-q6iu6L0g/company-logo_100_100/0/1630544071888/stmicroelectronics_logo?e=1722470400&v=beta&t=RPqMYPDFTyMHtbowqhZSbD8_AGmW3UNh0KML_ZaqRMY" href="https://www.st.com/" name="STMicroelectronics" role="Embedded Developer" period="Giu 2019 - Gen 2021" city="Arzano (NA), Campania, Italia"}
 ::
@@ -40,17 +44,19 @@ Software development according to the **ASPICE** (Automotive SPICE) model, inclu
 ::tecnologies{:items='["C", "AUTOSAR", "Code Coverage", "Git", "Bugzilla", "MCAL", "EB TRESOS", "Polyspace", "MISRA2012", "Doxygen", "TRACE32", "UML"]'}
 ::
 
-
+<br/>
+<br/>
+<br/>
 
 # Education
 
-## Bachelor's Degree in Electronic Engineering - University of Pisa
-**February 2019**
+::company{logo="https://media.licdn.com/dms/image/C510BAQFzeobIVHZw8Q/company-logo_100_100/0/1631329997902?e=1723680000&v=beta&t=edtqQZ8rBGlzP6QGX05kBYO8MRM5M3gEiIFIsR_esYA" href="https://www.unipi.it/" name="Università di Pisa" role="Electronic Engineer" period="February 2019" city="Pisa, Toscana, Italia"}
+::
 
 **Thesis**: Development of a driver in C language for managing the Timer RTC (Real Time Clock) integrated in ATMEGA32A and comparison of the performances of general purpose RTC and RTC for Ultra Low Power applications based on ROSC.
 
----
-
+<br/>
+<br/>
 
 # Projects
 
