@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <div class="text-6xl font-bold text-special">Vue.js Developer</div>
+    <h1>About Me</h1>
     <p>
       {{ page.description }}
     </p>

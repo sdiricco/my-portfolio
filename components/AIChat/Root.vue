@@ -4,16 +4,22 @@
       <!---------------------------->
       <!--Messages container-->
       <!---------------------------->
-      <div class="h-full px-3" style="padding-bottom: 90px;width: 980px;">
-        <div v-for="(message, index) in messagesHtml" :key="`message-${index}-${message.id}`" class="mb-5">
-          <AIChatMessage :icon="getIcon(message.role)" :role="getRoleName(message.role)" :value="message.html"
-            :background-icon="getBackgroundIcon(message.role)" :color-icon="getColorIcon(message.role)" />
-        </div>
-        <div v-if="status === 1">
-          <AIChatMessage :icon="getIcon(messageAssistantHtml.role)" role="assistant" :value="messageAssistantHtml.html"
-            :background-icon="getBackgroundIcon(messageAssistantHtml.role)"
-            :color-icon="getColorIcon(messageAssistantHtml.role)" />
-        </div>
+      <div class="h-full pt-4" style="padding-bottom: 90px;width: 980px;">
+        <template v-if="messagesHtml.length">
+          <div v-for="(message, index) in messagesHtml" :key="`message-${index}-${message.id}`" class="mb-5">
+            <AIChatMessage :icon="getIcon(message.role)" :role="getRoleName(message.role)" :value="message.html"
+              :background-icon="getBackgroundIcon(message.role)" :color-icon="getColorIcon(message.role)" />
+          </div>
+          <div v-if="status === 1">
+            <AIChatMessage :icon="getIcon(messageAssistantHtml.role)" role="assistant"
+              :value="messageAssistantHtml.html" :background-icon="getBackgroundIcon(messageAssistantHtml.role)"
+              :color-icon="getColorIcon(messageAssistantHtml.role)" />
+          </div>
+        </template>
+        <template v-else>
+          <AIChatEmpty @select="onSelectHint"/>
+        </template>
+
       </div>
     </div>
     <div class="p-4 flex justify-content-center">
@@ -107,6 +113,10 @@ const inputString = ref("");
 async function sendMessageToChatGpt() {
   execGpt(inputString.value);
   inputString.value = '';
+}
+
+function onSelectHint(message:string){
+  execGpt(message);
 }
 
 onMounted(() => {
