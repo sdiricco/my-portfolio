@@ -20,8 +20,7 @@ Lavoro principalmente su [MyMove](https://www.movesolutions.it/mymove-iot-platfo
 ::tecnologies{:items='["Vue.js", "Primevue", "Electron.js", "i18n", "VueRouter", "Pinia", "axios", "Amcharts", "Plotly.js", "TypeScript"]'}
 ::
 
-<br/>
-<br/>
+:spacing{class='pb-6'}
 
 ::company{logo="https://media.licdn.com/dms/image/D560BAQHeg7ka4DaRnQ/company-logo_100_100/0/1690899580264/intecs_logo?e=1722470400&v=beta&t=ZD7E5fVf7N0-4sCdWK79FuR6RcGvakytGnjW-SncmRY" href="https://intecs.it/page/homepage" name="Intecs Solutions" role="Software Developer" period="Apr 2019 - Mar 2022" city="Pisa, Toscana, Italia"}
 ::
@@ -32,8 +31,8 @@ L'applicazione desktop è stata sviluppata con **Electron.js** e **React.js**, i
 ::tecnologies{:items='["Node.js", "Electron.js", "Arduino", "MUI", "PWM", "LIN", "RS232", "SCPI"]'}
 ::
 
-<br/>
-<br/>
+:spacing{class='pb-6'}
+
 
 ::company{logo="https://media.licdn.com/dms/image/C4D0BAQFyQ-q6iu6L0g/company-logo_100_100/0/1630544071888/stmicroelectronics_logo?e=1722470400&v=beta&t=RPqMYPDFTyMHtbowqhZSbD8_AGmW3UNh0KML_ZaqRMY" href="https://www.st.com/" name="STMicroelectronics" role="Embedded Developer" period="Giu 2019 - Gen 2021" city="Arzano (NA), Campania, Italia"}
 ::
@@ -44,9 +43,8 @@ Sviluppo software secondo il modello **ASPICE** (Automotive SPICE), comprendente
 ::tecnologies{:items='["C", "AUTOSAR", "Code Coverage", "Git", "Bugzilla", "MCAL", "EB TRESOS", "Polyspace", "MISRA2012", "Doxygen", "TRACE32", "UML"]'}
 ::
 
-<br/>
-<br/>
-<br/>
+:spacing{class='pb-6'}
+
 
 # Istruzione
 
@@ -55,9 +53,9 @@ Sviluppo software secondo il modello **ASPICE** (Automotive SPICE), comprendente
 
 **Tesi**: Sviluppo di un driver in linguaggio C per la gestione del Timer RTC (Real Time Clock) integrato in ATMEGA32A e confronto delle prestazioni di RTC generici e RTC per applicazioni Ultra Low Power basati su ROSC.
 
-<br/>
-<br/>
+:spacing{class='pb-6'}
 
 # Progetti
 
 Sul mio [profilo GitHub](https://github.com/sdiricco), puoi trovare diversi progetti principalmente mirati all'esplorazione di nuove tecnologie.
+

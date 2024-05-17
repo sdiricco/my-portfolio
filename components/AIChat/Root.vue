@@ -4,16 +4,19 @@
       <!---------------------------->
       <!--Messages container-->
       <!---------------------------->
-      <div class="h-full px-3" style="padding-bottom: 90px;width: 980px;" >
-        <div v-for="(message, index) in messagesHtml" :key="`message-${index}-${message.id}`" class="mb-4">
-          <AIChatMessage icon="carbon:user-avatar-filled" :role="message.role" :value="message.html" />
+      <div class="h-full px-3" style="padding-bottom: 90px;width: 980px;">
+        <div v-for="(message, index) in messagesHtml" :key="`message-${index}-${message.id}`" class="mb-5">
+          <AIChatMessage :icon="getIcon(message.role)" :role="getRoleName(message.role)" :value="message.html"
+            :background-icon="getBackgroundIcon(message.role)" :color-icon="getColorIcon(message.role)" />
         </div>
         <div v-if="status === 1">
-          <AIChatMessage icon="carbon:user-avatar-filled" role="assistant" :value="messageAssistantHtml.html" />
+          <AIChatMessage :icon="getIcon(messageAssistantHtml.role)" role="assistant" :value="messageAssistantHtml.html"
+            :background-icon="getBackgroundIcon(messageAssistantHtml.role)"
+            :color-icon="getColorIcon(messageAssistantHtml.role)" />
         </div>
       </div>
     </div>
-    <div class="p-4 flex justify-content-center" >
+    <div class="p-4 flex justify-content-center">
       <AIChatInput @send="sendMessageToChatGpt" v-model:value="inputString" style="max-width: 980px;" />
     </div>
   </div>
@@ -30,7 +33,39 @@ const { data } = await useAsyncData("home", () =>
 
 );
 
-console.log(data);
+
+function getIcon(role: string) {
+  switch (role) {
+    case 'assistant':
+      return 'hugeicons:ai-network'
+    case 'user':
+      return 'ph:user-bold'
+    default:
+      return 'ph:user-bold'
+  }
+}
+
+function getRoleName(role: string) {
+  return {
+    'assistant': 'AI',
+    'user': 'Tu'
+  }[role] || ''
+}
+
+function getColorIcon(role: string) {
+  return {
+    'assistant': 'white',
+    'user': 'black'
+  }[role] || ''
+}
+
+function getBackgroundIcon(role: string) {
+  return {
+    'assistant': 'linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB)',
+    'user': 'white'
+  }[role] || ''
+}
+
 
 
 const { messages, messageAssistant, status, execGpt, systemMessage } =
@@ -56,7 +91,7 @@ const cv = JSON.stringify(data.value?.body?.children);
 
 systemMessage.value = {
   role: "system",
-  content: `Sei un assistente di un candidato che ha il seguente curriculum parsato in markdown ${cv}. Rispondi ai recruiter enfatizzando in markdown. Ti rivolgerai sempre a un recruiter`,
+  content: `Sei un assistente di un candidato che ha il seguente curriculum parsato in markdown ${cv}. Rispondi ai recruiter enfatizzando in markdown. Ti rivolgerai sempre a un recruiter. Non iniziare MAI un messaggio con un carattere <a capo>`,
 };
 
 const scrollToBottom = async () => {

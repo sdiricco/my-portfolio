@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <ContentRenderer :key="page._id" :value="page" />
+      <ContentRenderer :key="page._id" :value="page" />
   </NuxtLayout>
 </template>
 

@@ -4,7 +4,9 @@
 @import './common.css';
 @import './overwrite-primevue.css';
 @import './background-aimation.css';
-@import './markdown.css';
+@import './github-markdown.css';
+@import './github-markdown-dark.css';
+@import './overwrite-github-markdown.css';
 @import './hljs.css';
 
 

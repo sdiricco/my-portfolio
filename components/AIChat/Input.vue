@@ -1,8 +1,10 @@
 <template>
-  <InputGroup>
-    <InputText v-model="value" @keyup.enter="emit('send')" class="px-4 py-3 w-full border-round-left-3xl" />
-    <Button @click="emit('send')" class="px-4 border-round-right-3xl" icon="pi pi-send"></Button>
-  </InputGroup>
+
+  <IconField class="w-full">
+    <InputIcon class="pi pi-send px-3 cursor-pointer" @click="emit('send')" ></InputIcon>
+    <InputText v-model="value" @keyup.enter="emit('send')" class="px-4 py-3 w-full border-round-3xl"
+      placeholder="Send a message to AI assistant" />
+  </IconField>
 </template>
 
 <script setup lang="ts">
