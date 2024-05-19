@@ -52,7 +52,7 @@
     </div>
     <!--AI Dialog-->
     <div>
-      <AppDialog v-model:visible="AiChatDialogVisibility" header="AI Chat" :fullscreen="true"
+      <AppDialog v-model:visible="AiChatDialogVisibility" header="AI Assistant" :fullscreen="true"
         >
         <AIChatRoot />
       </AppDialog>
