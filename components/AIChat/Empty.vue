@@ -2,7 +2,7 @@
   <div class="flex h-full align-items-end">
     <div class="grid grid-nogutter w-full px-2">
       <div v-for="message in messages" class="col-12 md:col-6 p-2">
-        <div @click="emit('select', message)"
+        <div @click="emit('select', message.label)"
           class="border-round-xl border-1 surface-border p-4 text-overflow-ellipsis overflow-hidden cursor-pointer hover:surface-hover flex flex-column gap-2 align-items-start">
           <Icon :name="message.icon" :style="{ 'font-size': '1.5rem', color: message.iconColor}" />
           {{ message.label }}
