@@ -4,23 +4,18 @@
       <!---------------------------->
       <!--Messages container-->
       <!---------------------------->
-      <div class="h-full pt-4" style="padding-bottom: 90px;width: 980px;">
-        <template v-if="messagesHtml.length">
-          <div v-for="(message, index) in messagesHtml" :key="`message-${index}-${message.id}`" class="mb-5">
-            <AIChatMessage :icon="getIcon(message.role)" :role="getRoleName(message.role)" :value="message.html"
-              :background-icon="getBackgroundIcon(message.role)" :color-icon="getColorIcon(message.role)" />
-          </div>
-          <div v-if="status === 1">
-            <AIChatMessage :icon="getIcon(messageAssistantHtml.role)" role="assistant"
-              :value="messageAssistantHtml.html" :background-icon="getBackgroundIcon(messageAssistantHtml.role)"
-              :color-icon="getColorIcon(messageAssistantHtml.role)" />
-          </div>
-        </template>
-        <template v-else>
-          <AIChatEmpty @select="onSelectHint"/>
-        </template>
-
+      <div v-if="messagesHtml.length" class="h-full pt-4" style="padding-bottom: 90px;width: 980px;">
+        <div v-for="(message, index) in messagesHtml" :key="`message-${index}-${message.id}`" class="mb-5">
+          <AIChatMessage :icon="getIcon(message.role)" :role="getRoleName(message.role)" :value="message.html"
+            :background-icon="getBackgroundIcon(message.role)" :color-icon="getColorIcon(message.role)" />
+        </div>
+        <div v-if="status === 1">
+          <AIChatMessage :icon="getIcon(messageAssistantHtml.role)" role="assistant" :value="messageAssistantHtml.html"
+            :background-icon="getBackgroundIcon(messageAssistantHtml.role)"
+            :color-icon="getColorIcon(messageAssistantHtml.role)" />
+        </div>
       </div>
+      <AIChatEmpty v-else @select="onSelectHint" style="width: 980px;" />
     </div>
     <div class="p-4 flex justify-content-center">
       <AIChatInput @send="sendMessageToChatGpt" v-model:value="inputString" style="max-width: 980px;" />
@@ -115,7 +110,7 @@ async function sendMessageToChatGpt() {
   inputString.value = '';
 }
 
-function onSelectHint(message:string){
+function onSelectHint(message: string) {
   execGpt(message);
 }
 
