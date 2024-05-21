@@ -3,6 +3,8 @@ author: 'Simone Di Ricco'
 role: 'Frontend Developer'
 lastJob: '[2021 - Present] Front end Developer at Move Solutions'
 school: 'Graduated with Electronic Engineer'
+AIbtn: 'Assistant'
+descriptionTitle: About Me
 description: "Simone Di Ricco has experience as a frontend and embedded developer, with a particular focus on web technologies and software development for automotive applications. Simone has held key roles at Move Solutions, Intecs Solutions, and ST Microelectronics, working on projects ranging from IoT platform development to testing and monitoring automotive systems. He holds a Bachelor's degree in Electronic Engineering from the University of Pisa and completed a thesis on comparing the performance of RTC Timer. His CV reflects a constant commitment to exploring new technologies through personal and professional projects."
 ---
 

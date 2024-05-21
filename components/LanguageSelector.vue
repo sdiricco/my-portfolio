@@ -40,7 +40,7 @@
 <script setup>
 import { ref,computed } from "vue";
 import {useMainStore} from "@/stores/index"
-
+const { setLocale } = useI18n()
 const mainStore = useMainStore()
 
 const selectedCountry = computed({
@@ -49,10 +49,15 @@ const selectedCountry = computed({
   },
   set(value) {
     mainStore.language = value.code
+    setLocale(value.code)
   }
 })
 const countries = ref([
   { name: "It", code: "it", icon:"flag:it-4x3" },
   { name: "En", code: "en", icon:"flag:gb-4x3" },
 ]);
+
+onMounted(()=> {
+  setLocale(selectedCountry.value.code)
+})
 </script>

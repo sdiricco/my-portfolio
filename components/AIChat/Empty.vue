@@ -16,26 +16,27 @@
 
 <script setup lang="ts">
 import { ref } from "vue"
+const { t } = useI18n()
 
-const messages = ref([
+const messages = computed( () => [
   {
-    "label": "Quali erano le tue principali responsabilità nel tuo ultimo lavoro?",
+    "label": t('AIChat.hints[0]'),
     "icon": "mdi:briefcase-outline",
     "iconColor": "#FF5733"
   },
   {
-    "label": "Puoi descrivere un progetto significativo a cui hai lavorato e il tuo ruolo specifico?",
+    "label": t('AIChat.hints[1]'),
     "icon": "ant-design:project-filled",
     "iconColor": "#33C1FF"
   },
   {
-    "label": "Quali sono i tuoi obiettivi a lungo termine nella tua carriera?",
+    "label": t('AIChat.hints[2]'),
     "icon": "mdi:target",
     "iconColor": "#33FF57"
   },
 
   {
-    "label": "Quali sono le tue principali motivazioni e cosa ti spinge a dare il meglio?",
+    "label": t('AIChat.hints[3]'),
     "icon": "mdi:star-outline",
     "iconColor": "#FFC133"
   }

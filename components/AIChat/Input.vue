@@ -3,7 +3,7 @@
   <IconField class="w-full">
     <InputIcon class="pi pi-send px-3 cursor-pointer" @click="emit('send')" ></InputIcon>
     <InputText v-model="value" @keyup.enter="emit('send')" class="px-4 py-3 w-full border-round-3xl"
-      placeholder="Send a message to AI assistant" />
+      :placeholder="$t('AIChat.input.placeholder')" />
   </IconField>
 </template>
 

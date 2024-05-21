@@ -1,9 +1,8 @@
 <template>
   <div class="p-4">
-    <h1>About Me</h1>
-    <p>
-      {{ page.description }}
-    </p>
+    <i class="text-base">
+      "{{ page.description }}"
+    </i>
     <ClientOnly>
       <Amchart5V3 />
     </ClientOnly>

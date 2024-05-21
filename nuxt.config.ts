@@ -24,11 +24,15 @@ export default defineNuxtConfig({
       openaiApiKey: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
     }
   },
+  i18n: {
+    vueI18n: './i18n.config.ts' // if you are using custom path, default
+  },
   modules: [
     "nuxt-primevue",
     "@nuxt/content",
     "nuxt-icon",
     "@pinia/nuxt",
+    "@nuxtjs/i18n"
   ],
   css: [
     "primevue/resources/themes/aura-dark-green/theme.css",

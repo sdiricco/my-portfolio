@@ -3,6 +3,8 @@ author: 'Simone Di Ricco'
 role: 'Frontend Developer'
 lastJob: '[2021 - Presente] Front end Developer presso Move Solutions'
 school: 'Laureato in Ingegneria Elettronica'
+AIbtn: 'Assistente'
+descriptionTitle: Su di me
 description: "Simone Di Ricco ha esperienza come sviluppatore frontend ed embedded, con un particolare focus sulle tecnologie web e sullo sviluppo software per applicazioni automobilistiche. Simone ha ricoperto ruoli chiave presso Move Solutions, Intecs Solutions e ST Microelectronics, lavorando su progetti che spaziano dallo sviluppo di piattaforme IoT al testing e monitoraggio di sistemi automobilistici. Ha conseguito una laurea in Ingegneria Elettronica presso l'Università di Pisa e ha completato una tesi sul confronto delle prestazioni dei Timer RTC. Il suo CV riflette un costante impegno nell'esplorare nuove tecnologie attraverso progetti personali e professionali."
 ---
 

@@ -6,4 +6,4 @@
 - Creare un componente `Container` per la Chat
 - ~~Salvare il CSS per `highlight.js` in un file pubblico.~~
 - Creare una composable per Marked
-- Sistemare le card suggerimento all'interno della chat AI in modo che abbiano altezza e largezza uguali. Renderle responsive ed aggiungere delle icone
+- ~~Sistemare le card suggerimento all'interno della chat AI in modo che abbiano altezza e largezza uguali. Renderle responsive ed aggiungere delle icone~~

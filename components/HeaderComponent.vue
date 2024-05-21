@@ -41,7 +41,7 @@
           <!--Request AI Chat-->
           <div>
             <AIChatButton @click="AiChatDialogVisibility = true">
-              <span class="font-bold text-xl mr-2">Chat AI</span>
+              <span class="font-bold text-xl mr-2">{{ page.AIbtn }}</span>
               <Icon name="hugeicons:ai-network" style="font-size: 2rem; " />
             </AIChatButton>
           </div>
