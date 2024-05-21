@@ -13,7 +13,7 @@
           <Icon color="#a1f7b9" name="mdi:github" style="font-size: 2rem" />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://linkedin.com/in/simone-di-ricco-92992aa7"
           target="_blank"
           rel="noopener noreferrer"
         >
