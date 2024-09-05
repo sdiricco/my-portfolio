@@ -1,7 +1,9 @@
 <template>
   <div class="flex align-items-start gap-3 py-3">
     <a :href="href">
-      <img :src="logo" alt="logo" class="img" />
+      <div class="img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path fill="currentColor" d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z"/></svg>
+      </div>
 
     </a>
     <div>
@@ -18,6 +20,7 @@ defineProps(['logo', 'href', 'role', 'name', 'period', 'city']);
 
 <style scoped>
 .img{
+  padding: 0.75rem;
   width: 4rem;
   height: 4rem;
   max-width: 4rem;
@@ -25,5 +28,10 @@ defineProps(['logo', 'href', 'role', 'name', 'period', 'city']);
   min-height: 4rem;
   min-width: 4rem;
   border-radius: 50%;
+  background-color: white;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

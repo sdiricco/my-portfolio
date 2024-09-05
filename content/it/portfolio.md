@@ -13,7 +13,7 @@ description: "Simone Di Ricco ha esperienza come sviluppatore frontend ed embedd
 <!-- -------------------------- -->
 <!-- ESPERIENZA MOVE SOLUTIONS -->
 <!-- -------------------------- -->
-::company{name="Move Solutions" role="Frontend Lead" period="Gen 2022 - Presente" city="Lucca, Toscana, Italia" logo="https://media.licdn.com/dms/image/C4D0BAQHWiBCydb3t2A/company-logo_100_100/0/1630576008981/movesolutions_logo?e=1722470400&v=beta&t=pmBxcUjNBhWO37mijvUY63Mn4s-28HYYoPzVfO5iaXk" href="https://www.movesolutions.it/"  }
+::company{name="Move Solutions" role="Frontend Lead" period="Gen 2022 - Presente" city="Lucca, Toscana, Italia" logo="https://www.movesolutions.it/wp-content/uploads/2021/03/logo_move-1.png" href="https://www.movesolutions.it/"  }
 ::
 
 Presso Move Solutions, ricopro la posizione di frontend developer e supervisore di un piccolo team di sviluppatori frontend.
