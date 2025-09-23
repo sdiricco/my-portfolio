@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       openaiApiKey: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+      huggingFaceApiKey: '', // can be overridden by NUXT_PUBLIC_HUGGING_FACE_API_KEY environment variable
     }
   },
   i18n: {

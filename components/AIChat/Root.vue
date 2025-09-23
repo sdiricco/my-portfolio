@@ -25,6 +25,7 @@
 
 <script setup lang="ts">
 import { marked } from "~/services/marked";
+import { useAIChat, type IMessage } from "~/composables/useAIChat";
 const config = useRuntimeConfig()
 console.log('Runtime config:', config)
 
@@ -69,13 +70,13 @@ function getBackgroundIcon(role: string) {
 
 
 
-const { messages, messageAssistant, status, execGpt, systemMessage } =
-  useChatGpt({
-    apiKey: config.public.openaiApiKey as string,
+const { messages, messageAssistant, status, execChat, systemMessage } =
+  useAIChat({
+    apiKey: config.public.huggingFaceApiKey as string || config.public.openaiApiKey as string,
   });
 
 const messagesHtml = computed(() =>
-  messages.value.map((message) => ({
+  messages.value.map((message: IMessage) => ({
     role: message.role,
     id: Math.random().toString(),
     html: marked.parse(message.content),
@@ -106,12 +107,12 @@ watch(messageAssistant, scrollToBottom, { deep: true });
 
 const inputString = ref("");
 async function sendMessageToChatGpt() {
-  execGpt(inputString.value);
+  execChat(inputString.value);
   inputString.value = '';
 }
 
 function onSelectHint(message: string) {
-  execGpt(message);
+  execChat(message);
 }
 
 onMounted(() => {
